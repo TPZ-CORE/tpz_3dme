@@ -78,7 +78,7 @@ AddEventHandler('tpz_3dme:server:display', function(text)
 			if tonumber(player) == _source then 
 				sentBy = '^4[ME]^7'
 			else 
-				sentBy = "^3" .. fullname .. "^7"
+				sentBy = "^3" .. PlayerData.username .. "^7"
 			end
 	
 			TriggerClientEvent('chatMessage', tonumber(player), sentBy,  { 255, 255, 255 }, text)
@@ -105,3 +105,4 @@ AddEventHandler('tpz_3dme:server:display', function(text)
 	end
 
 end)
+
