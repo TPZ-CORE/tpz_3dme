@@ -7,6 +7,7 @@ local activeMessages = {} -- messages per player
 Citizen.CreateThread(function()
     TriggerEvent("chat:addSuggestion", "/" .. Config.Command, Config.CommandSuggestion, { { name = 'text', help = Config.CommandActionText } } )
 end)
+
 -- /me command
 RegisterCommand(Config.Command, function(source, args)
 
@@ -107,3 +108,4 @@ Citizen.CreateThread(function()
     end
     
 end)
+
